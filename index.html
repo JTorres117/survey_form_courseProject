@@ -1,0 +1,59 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<main>
+  
+  <h1 id="title">Survey Form For Opinions And Such</h1>
+  <p id='description'> Thanks, apparently everyone's opinion matters</p>
+  <form id="survey-form" action="">
+    <label for="name" id="name-label">Name:</label><br>
+    <input id="name" name="name" type="text" placeholder="Name" required><br>
+    
+    <label for="email" id="email-label">Email:</label><br>
+    <input id="email" name = "email" type="email" placeholder="Email Address" required><br>
+    
+    <label for="number" id="number-label">Age (Optional):</label><br>
+    <input id="number" name="number" type="number" placeholder="Age" min="3" max="99"><br>
+    
+    <label for="gender-dropdown" id="gender-dropdown-label">Gender:</label><br>
+    <select id="gender-dropdown" name="gender-dropdown">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="transgender">Transgender</option>
+    </select><br>
+    <label for="race-dropdown" name="race-dropdown-label">Race:</label><br>
+    <select id="race-dropdown" name="race-dropdown">
+      <option value="american-indian">American Indian</option>
+      <option value="asian">Asian</option>
+      <option value="black">Black</option>
+      <option value="hispanic">Hispanic</option>
+      <opiton value="native-hawaiian">Native Hawaiian</option>
+      <option value="white">White</option>
+    </select><br>
+    
+    
+    <label for="opinionated-not">Do you have strong opinions about stuff?</label><br>
+    <label for="opinionated">
+      <input id="opinionated" type="radio" name="opinionated-not" value="opinionated" checked>Opinionated</label>
+    <label for="not">  
+      <input id="not" type="radio" name="opinionated-not" value="not">Not So Much</label><br><br>
+    
+    
+    <label for="my-opinion">How I feel about my opinion:</label><br>
+    <label for="should">
+      <input id="should" type="checkbox" name="my-opinion" value="should">Others should know my opinion</label><br>
+    <label for="want">
+      <input id="want" type="checkbox" name="my-opinion" value="want">People want to know my opinion</label><br>
+    <label for="need">
+      <input id="need" type="checkbox" name="my-opinion" value="need">I need others to hear my opinion</label><br><br>
+    
+    <label for="comments">My thoughts on things:</label><br>
+      <textarea name="comments" id="comments" rows="10" cols="40" placeholder="Let me start by saying, you're welcome for the thoughts I'm about to share."></textarea><br><br>
+      
+    <button type="submit" id="submit">Submit</button>
+
+</main>
